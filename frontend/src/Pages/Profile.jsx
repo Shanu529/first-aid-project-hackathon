@@ -126,7 +126,7 @@ const Profile = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 py-12">
-      <Navbar />
+     
       <form onSubmit={handleSaveProfile}>
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Header */}

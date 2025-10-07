@@ -30,7 +30,6 @@ const Home = () => {
   return (
     <div className="min-h-screen  flex flex-col">
       {/* Navbar/Header */}
-      <Navbar />
 
       <section className="relative overflow-hidden flex-grow min-h-[600px]">
         {/* Background image with smooth overlay */}
@@ -423,6 +422,13 @@ const Home = () => {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="bg-blue-700 flex justify-center items-center p-5 text-white">
+        <p className="text-center text-sm">
+          © 2025 Emergency Aid. All rights reserved. Stay safe and seek help
+          when needed. Your health matters to us.
+        </p>
       </section>
     </div>
   );

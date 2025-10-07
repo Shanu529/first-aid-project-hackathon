@@ -70,7 +70,7 @@ const Emergency = () => {
 
   return (
     <div className="min-h-screen bg-gradient-subtle">
-      <Navbar />
+    
       <div className="container mx-auto px-4 py-12 max-w-4xl">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Emergency SOS</h1>
