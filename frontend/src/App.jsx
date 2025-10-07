@@ -6,6 +6,7 @@ import Home from "./Pages/Home"
 import FirstAid from './Pages/first_Aid'
 import Profile from './Pages/Profile'
 import Emergency from './Pages/Emergency'
+import Hospital from './Pages/Hospital'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/first-aid' element = {<FirstAid />} />
         <Route path='/emergency' element={<Emergency />}/>
         <Route path='/profile' element={<Profile />} />
+         <Route path='/hospitals' element = {<Hospital/>} />
       </Routes>
       
     </div>

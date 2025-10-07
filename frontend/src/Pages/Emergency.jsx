@@ -43,6 +43,7 @@ const Emergency = () => {
             setAlertsSent(["SMS", "Email", "WhatsApp"]);
             toast.success("📍 Location & nearest hospitals sent to backend!");
           } catch (error) {
+            
             console.error(error);
             toast.error("❌ Failed to send location to backend");
           }
