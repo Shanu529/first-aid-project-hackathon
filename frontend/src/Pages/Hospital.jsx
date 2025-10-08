@@ -51,12 +51,19 @@ function Hospital() {
               params: { lat: coords.lat, lng: coords.lng },
             }
           );
+          
+
+          console.log("here is response of hospitals location",response);
+          
 
           if (response.data?.data?.length) {
             setNearestHospitals(response.data.data);
           } else {
             toast.info("No hospitals found nearby");
           }
+
+          // console.log("here is nearsthospitals",nearestHospitals);
+          
         } catch (err) {
           console.error(err);
           toast.error("❌ Failed to fetch nearby hospitals");
@@ -93,7 +100,7 @@ function Hospital() {
         </button>
       </div>
 
-      {/* 🗺️ Map (Only if location found) */}
+      {/*  Map (Only if location found) */}
       {userLocation && (
         <div className="w-full  mb-10 rounded-xl overflow-hidden  shadow">
           <MapContainer
