@@ -79,6 +79,7 @@ const Profile = () => {
     ]);
   };
 
+
   const removeEmergencyContact = (id) => {
     setEmergencyContacts(emergencyContacts.filter((c) => c.id !== id));
   };
@@ -126,7 +127,6 @@ const Profile = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 py-12">
-     
       <form onSubmit={handleSaveProfile}>
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Header */}
@@ -216,7 +216,9 @@ const Profile = () => {
                 <div>
                   <Label>Blood Group</Label>
                   <Select
-                    onValueChange={(val) => handleSelectChange("bloodGroup", val)}
+                    onValueChange={(val) =>
+                      handleSelectChange("bloodGroup", val)
+                    }
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="Select blood group" />
@@ -257,7 +259,9 @@ const Profile = () => {
                 <div>
                   <Label>Organ Donor</Label>
                   <Select
-                    onValueChange={(val) => handleSelectChange("OrganDonor", val)}
+                    onValueChange={(val) =>
+                      handleSelectChange("OrganDonor", val)
+                    }
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="Select option" />
@@ -313,7 +317,11 @@ const Profile = () => {
                     <CardDescription>In case of emergency</CardDescription>
                   </div>
                 </div>
-                <Button variant="outline" size="sm" onClick={addEmergencyContact}>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={addEmergencyContact}
+                >
                   <Plus className="h-4 w-4" /> Add
                 </Button>
               </div>
